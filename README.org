@@ -1,5 +1,6 @@
-#+TITLE: 工作中遇到的小技巧
+#+TITLE: Working Tips and Tricks
 #+AUTHOR: ufengger
 * GDB
 ** Configuration
-可以直接使用 [[https://github.com/gdbinit/Gdbinit]] ，将其命名为 .gdbinit 。
+可以直接使用 [[https://github.com/gdbinit/Gdbinit]] ，将其命名为 ~.gdbinit~ ，并且新建文件 ~.gdbinit.local~ 。 ~.gdbinit.local~ 中的配置将会覆盖 ~.gdbinit~ 中的配置。
+* completion with fzf
