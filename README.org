@@ -19,7 +19,7 @@ set print pretty on
 
 ** History search with fzf
 
-通常来说这是无法办到的，参见 [[https://github.com/junegunn/fzf/issues/1516#issuecomment-472469010]] 。然而，可以按照 [[https://github.com/junegunn/fzf/issues/1516#issuecomment-711792764]] 对 GDB 做下小改动，参见项目 [[https://github.com/filipkilibarda/gdb_fzf_patch]] 。
+通常来说这是无法办到的，参见 [[https://github.com/junegunn/fzf/issues/1516#issuecomment-472469010][这个 issue]] 。然而，可以按照 [[https://github.com/junegunn/fzf/issues/1516#issuecomment-711792764][这个回答]] 对 GDB 做下小改动，参见项目 [[https://github.com/filipkilibarda/gdb_fzf_patch][gdb_fzf_patch]] 。
 
 #+begin_src bash
 mkdir gdb-with-fzf
