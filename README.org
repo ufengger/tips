@@ -1,5 +1,11 @@
 #+TITLE: Working Tips and Tricks
 #+AUTHOR: ufengger
+* 目录                                                                  :TOC:
+- [[#gdb][GDB]]
+  - [[#configuration][Configuration]]
+  - [[#history-search-with-fzf][History search with fzf]]
+  - [[#display-output-of-target-application-in-a-separate-window][Display output of target application in a separate window]]
+
 * GDB
 
 ** Configuration
