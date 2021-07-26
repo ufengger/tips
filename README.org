@@ -2,5 +2,6 @@
 #+AUTHOR: ufengger
 * GDB
 ** Configuration
-可以直接使用 [[https://github.com/gdbinit/Gdbinit]] ，将其命名为 ~.gdbinit~ ，并且新建文件 ~.gdbinit.local~ 。 ~.gdbinit.local~ 中的配置将会覆盖 ~.gdbinit~ 中的配置。
+可以直接使用 [[https://github.com/gdbinit/Gdbinit]] ，将其命名为 ~.gdbinit~ ，并且新建文件 ~.gdbinit.local~ 。文件 ~.gdbinit.local~ 中的配置将会覆盖 ~.gdbinit~ 中的配置。下面是我的配置：
+#+INCLUDE: ".gdbinit.local" src
 * completion with fzf
