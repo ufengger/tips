@@ -10,7 +10,19 @@ set $SHOW_CONTEXT = 0
 set history size unlimited
 set history remove-duplicates unlimited
 
-#Cause GDB to print structures in an indented format with one member per line
+# Cause GDB to print structures in an indented format with one member per line
 set print pretty on
 #+end_src
-* completion with fzf
+** completion with fzf
+** Display output of target application in a separate window
+该问题来源于 [[https://stackoverflow.com/a/31804225]] 。
+1. 打开一个终端（该终端用于输出被调试程序的输出），执行 ~tty~ 命令：
+#+begin_src bash
+$ tty
+/dev/pts/0
+#+end_src
+2. 打开另一个终端并进入 ~GDB~ ，然后输入：
+#+begin_src bash
+tty /dev/pts/0
+run
+#+end_src
