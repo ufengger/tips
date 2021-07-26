@@ -3,7 +3,14 @@
 * GDB
 ** Configuration
 可以直接使用 [[https://github.com/gdbinit/Gdbinit]] ，将其命名为 ~.gdbinit~ ，并且新建文件 ~.gdbinit.local~ 。文件 ~.gdbinit.local~ 中的配置将会覆盖 ~.gdbinit~ 中的配置。下面是我的配置：
-#+begin_src
-#+INCLUDE: ".gdbinit.local" src
+#+begin_src bash
+set $SHOWCPUREGISTERS = 0
+set $SHOW_CONTEXT = 0
+
+set history size unlimited
+set history remove-duplicates unlimited
+
+#Cause GDB to print structures in an indented format with one member per line
+set print pretty on
 #+end_src
 * completion with fzf
