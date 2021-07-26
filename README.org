@@ -53,12 +53,12 @@ sudo make install
 
 该问题来源于 [[https://stackoverflow.com/a/31804225]] 。
 
-1. 打开一个终端（该终端用于输出被调试程序的输出），执行 ~tty~ 命令：
++ 打开一个终端（该终端用于输出被调试程序的输出），执行 ~tty~ 命令：
 #+begin_src bash
 $ tty
 /dev/pts/0
 #+end_src
-2. 打开另一个终端并进入 ~GDB~ ，然后输入：
++ 打开另一个终端并进入 ~GDB~ ，然后输入：
 #+begin_src bash
 (gdb) tty /dev/pts/0
 (gdb) run
