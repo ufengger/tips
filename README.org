@@ -1,8 +1,11 @@
 #+TITLE: Working Tips and Tricks
 #+AUTHOR: ufengger
 * GDB
+
 ** Configuration
+
 可以直接使用 [[https://github.com/gdbinit/Gdbinit]] ，将其命名为 ~.gdbinit~ ，并且新建文件 ~.gdbinit.local~ 。文件 ~.gdbinit.local~ 中的配置将会覆盖 ~.gdbinit~ 中的配置。下面是我的配置：
+
 #+begin_src bash
 set $SHOWCPUREGISTERS = 0
 set $SHOW_CONTEXT = 0
@@ -13,9 +16,43 @@ set history remove-duplicates unlimited
 # Cause GDB to print structures in an indented format with one member per line
 set print pretty on
 #+end_src
-** completion with fzf
+
+** History search with fzf
+
+通常来说这是无法办到的，参见 [[https://github.com/junegunn/fzf/issues/1516#issuecomment-472469010]] 。然而，可以按照 [[https://github.com/junegunn/fzf/issues/1516#issuecomment-711792764]] 对 GDB 做下小改动，参见项目 [[https://github.com/filipkilibarda/gdb_fzf_patch]] 。
+
+#+begin_src bash
+mkdir gdb-with-fzf
+cd gdb-with-fzf
+
+# clone
+git clone https://github.com/filipkilibarda/gdb_fzf_patch
+
+# download gdb
+aria2c https://ftp.gnu.org/gnu/gdb/gdb-10.2.tar.xz
+tar xvf gdb-10.2.tar.xz
+cd gdb-10.2/
+git init
+git add .
+git commit -m "first commit"
+
+# apply the patch
+git apply ../gdb_fzf_patch/gdb.patch
+git add .
+git commit -m "fzf patch"
+
+# build gdb
+mkdir build
+cd build
+../configure --with-python=$(which python) --enable-targets=all
+make -j $(nproc)
+sudo make install
+#+end_src
+
 ** Display output of target application in a separate window
+
 该问题来源于 [[https://stackoverflow.com/a/31804225]] 。
+
 1. 打开一个终端（该终端用于输出被调试程序的输出），执行 ~tty~ 命令：
 #+begin_src bash
 $ tty
