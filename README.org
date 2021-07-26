@@ -23,6 +23,6 @@ $ tty
 #+end_src
 2. 打开另一个终端并进入 ~GDB~ ，然后输入：
 #+begin_src bash
-tty /dev/pts/0
-run
+(gdb) tty /dev/pts/0
+(gdb) run
 #+end_src
