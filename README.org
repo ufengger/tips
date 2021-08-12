@@ -5,6 +5,7 @@
   - [[#configuration][Configuration]]
   - [[#history-search-with-fzf][History search with fzf]]
   - [[#display-output-of-target-application-in-a-separate-window][Display output of target application in a separate window]]
+  - [[#display-artificial-arrays][Display artificial arrays]]
 
 * GDB
 
@@ -68,4 +69,18 @@ $ tty
 #+begin_src bash
 (gdb) tty /dev/pts/0
 (gdb) run
+#+end_src
+
+** Display artificial arrays
+
+If a program says
+
+#+begin_src c
+int *array = (int *) malloc (len * sizeof (int));
+#+end_src
+
+you can print the contents of ~array~ with
+
+#+begin_src bash
+(gdb) p *array@len
 #+end_src
