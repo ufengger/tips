@@ -84,3 +84,21 @@ you can print the contents of ~array~ with
 #+begin_src bash
 (gdb) p *array@len
 #+end_src
+
+以上来自 [[https://sourceware.org/gdb/current/onlinedocs/gdb/Arrays.html][官方文档]] ，但是在用 [[https://github.com/gdbinit/Gdbinit][github.com/gdbinit/Gdbinit]] 这个配置时，需要注意 ~@~ 后面的指针长度默认是十六进制，例如若我们想打印长度为 10 的数组，下面的代码：
+
+#+begin_src bash
+(gdb) p *array @ 10
+#+end_src
+
+会打印出 16 个元素。正确的代码应该是：
+
+#+begin_src bash
+(gdb) p *array @ 0x10
+#+end_src
+
+或者，
+
+#+begin_src bash
+(gdb) p/d *array @ 10
+#+end_src
