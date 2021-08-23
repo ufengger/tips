@@ -8,6 +8,8 @@
   - [[#display-artificial-arrays][Display artificial arrays]]
 - [[#conda][Conda]]
   - [[#keyboard-keys-not-working-on-urxvt][Keyboard keys not working on URxvt]]
+- [[#interesting-links][Interesting links]]
+  - [[#mathoverflow][mathoverflow]]
 
 * GDB
 
@@ -112,3 +114,10 @@ you can print the contents of ~array~ with
 Just manually copy ~/lib/terminfo/r/rxvt-unicode-256color~ to
 ~$HOME/miniconda3/share/terminfo/r/~, and also to
 ~$HOME/miniconda3/envs/YOUR_ENVS_NAME/share/terminfo/r/~.
+* Interesting links
+
+** mathoverflow
+
+- [[https://mathoverflow.net/q/338607][Why doesn't mathematics collapse even though humans quite often make mistakes in their proofs?]]
+
+- [[https://mathoverflow.net/q/362326][Why do bees create hexagonal cells ? (Mathematical reasons)]] 
