@@ -1,16 +1,23 @@
 #+TITLE: Working Tips and Tricks
 #+AUTHOR: ufengger
 * 目录                                                                  :TOC:
+- [[#conda][Conda]]
+  - [[#keyboard-keys-not-working-on-urxvt][Keyboard keys not working on URxvt]]
 - [[#gdb][GDB]]
   - [[#configuration][Configuration]]
   - [[#history-search-with-fzf][History search with fzf]]
   - [[#display-output-of-target-application-in-a-separate-window][Display output of target application in a separate window]]
   - [[#display-artificial-arrays][Display artificial arrays]]
-- [[#conda][Conda]]
-  - [[#keyboard-keys-not-working-on-urxvt][Keyboard keys not working on URxvt]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
 
+* Conda
+
+** Keyboard keys not working on URxvt
+
+Just manually copy ~/lib/terminfo/r/rxvt-unicode-256color~ to
+~$HOME/miniconda3/share/terminfo/r/~, and also to
+~$HOME/miniconda3/envs/YOUR_ENVS_NAME/share/terminfo/r/~.
 * GDB
 
 ** Configuration
@@ -107,13 +114,6 @@ you can print the contents of ~array~ with
 (gdb) p/d *array @ 10
 #+end_src
 
-* Conda
-
-** Keyboard keys not working on URxvt
-
-Just manually copy ~/lib/terminfo/r/rxvt-unicode-256color~ to
-~$HOME/miniconda3/share/terminfo/r/~, and also to
-~$HOME/miniconda3/envs/YOUR_ENVS_NAME/share/terminfo/r/~.
 * Interesting links
 
 ** mathoverflow
