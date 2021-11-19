@@ -10,6 +10,7 @@
   - [[#display-artificial-arrays][Display artificial arrays]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
+  - [[#github][github]]
 
 * Conda
 
@@ -125,3 +126,7 @@ you can print the contents of ~array~ with
 - [[https://mathoverflow.net/q/281447][Mathematical games interesting to both you and a 5+-year-old child]]
 
 - [[https://mathoverflow.net/q/94742][Examples of interesting false proofs]]
+
+** github
+
+- [[https://github.com/kkkgo/KMS_VL_ALL][KMS_VL_ALL - Smart Activation Script]]
