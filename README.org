@@ -129,6 +129,12 @@ you can print the contents of ~array~ with
 
 - [[https://mathoverflow.net/q/5892][What is convolution intuitively?]]
 
+- [[https://mathoverflow.net/q/10014][Applications of the Chinese remainder theorem]]
+
+- [[https://mathoverflow.net/q/65729][What are "perfectoid spaces"?]]
+
+- [[https://mathoverflow.net/q/410798][Ideas for introducing Galois theory to advanced high school students]]
+
 ** github
 
 - [[https://github.com/kkkgo/KMS_VL_ALL][KMS_VL_ALL - Smart Activation Script]]
