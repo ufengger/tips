@@ -13,6 +13,7 @@
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
   - [[#github][github]]
+  - [[#miscellaneous][miscellaneous]]
 
 * Conda
 
@@ -189,3 +190,7 @@ you can print the contents of ~array~ with
 ** github
 
 - [[https://github.com/kkkgo/KMS_VL_ALL][KMS_VL_ALL - Smart Activation Script]]
+
+** miscellaneous
+
+- [[http://www.georgehart.com/bagel/bagel.html][Mathematically Correct Breakfast: How to Slice a Bagel into Two Linked Halves]]
