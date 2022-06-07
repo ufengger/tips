@@ -187,6 +187,8 @@ you can print the contents of ~array~ with
 
 - [[https://mathoverflow.net/q/410798][Ideas for introducing Galois theory to advanced high school students]]
 
+- [[https://mathoverflow.net/q/13526][Geometric interpretation of trace]]
+
 ** github
 
 - [[https://github.com/kkkgo/KMS_VL_ALL][KMS_VL_ALL - Smart Activation Script]]
