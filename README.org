@@ -13,6 +13,7 @@
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
   - [[#github][github]]
+  - [[#online-courses][Online Courses]]
   - [[#miscellaneous][miscellaneous]]
 
 * Conda
@@ -192,6 +193,16 @@ you can print the contents of ~array~ with
 ** github
 
 - [[https://github.com/kkkgo/KMS_VL_ALL][KMS_VL_ALL - Smart Activation Script]]
+
+** Online Courses
+
+- [[http://cs.brown.edu/courses/csci2420/lectures/][Brown CS242: Probabilistic Graphical Models]]
+
+- [[https://canvas.eee.uci.edu/courses/45797/assignments/syllabus][UCI CS274B: Learning in Graphical Models]]
+
+- [[https://canvas.eee.uci.edu/courses/45799/assignments/syllabus][UCI CS275P: Statistical Learning & Graphical Models]]
+
+- [[https://canvas.eee.uci.edu/courses/38392/assignments/syllabus][UCI CS177: Applications of Probability in Computer Science]]
 
 ** miscellaneous
 
