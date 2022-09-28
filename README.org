@@ -10,6 +10,8 @@
   - [[#display-artificial-arrays][Display artificial arrays]]
 - [[#c-language][C Language]]
   - [[#conversion-from-unsigned-integral-type][Conversion from unsigned integral type]]
+- [[#linux][Linux]]
+  - [[#how-to-disableenable-touchpad-or-trackpoint][How to disable/enable touchpad or trackpoint?]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
   - [[#github][github]]
@@ -167,6 +169,34 @@ you can print the contents of ~array~ with
 | *=unsigned long long=* | *=float=*              | Convert to *=long=*; convert *=long=* to *=float=*    |
 | *=unsigned long long=* | *=double=*             | Convert directly to *=double=*                        |
 | *=unsigned long long=* | *=long double=*        | Convert to *=long=*; convert *=long=* to *=double=*   |
+
+* Linux
+** How to disable/enable touchpad or trackpoint?
+首先可以使用 ~xinput list~ 查看设备名称:
+
+#+BEGIN_SRC bash
+⎡ Virtual core pointer                    	id=2	[master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
+⎜   ↳ ELAN067B:00 04F3:31F8 Mouse             	id=9	[slave  pointer  (2)]
+⎜   ↳ ELAN067B:00 04F3:31F8 Touchpad          	id=10	[slave  pointer  (2)]
+⎜   ↳ TPPS/2 Elan TrackPoint                  	id=14	[slave  pointer  (2)]
+⎣ Virtual core keyboard                   	id=3	[master keyboard (2)]
+    ↳ Virtual core XTEST keyboard             	id=5	[slave  keyboard (3)]
+    ↳ Video Bus                               	id=6	[slave  keyboard (3)]
+    ↳ Power Button                            	id=7	[slave  keyboard (3)]
+    ↳ Sleep Button                            	id=8	[slave  keyboard (3)]
+    ↳ Intel HID events                        	id=12	[slave  keyboard (3)]
+    ↳ AT Translated Set 2 keyboard            	id=13	[slave  keyboard (3)]
+    ↳ ThinkPad Extra Buttons                  	id=15	[slave  keyboard (3)]
+    ↳ sof-hda-dsp Headphone                   	id=11	[slave  keyboard (3)]
+#+END_SRC
+
+然后：
+
+#+BEGIN_SRC bash
+xinput disable "ELAN067B:00 04F3:31F8 Touchpad"
+xinput disable "TPPS/2 Elan TrackPoint"
+#+END_SRC
 
 * Interesting links
 
