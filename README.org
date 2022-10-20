@@ -12,6 +12,7 @@
   - [[#conversion-from-unsigned-integral-type][Conversion from unsigned integral type]]
 - [[#linux][Linux]]
   - [[#how-to-disableenable-touchpad-or-trackpoint][How to disable/enable touchpad or trackpoint?]]
+  - [[#how-to-disable-a-pci-device][How to disable a PCI device?]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
   - [[#github][github]]
@@ -197,6 +198,22 @@ you can print the contents of ~array~ with
 xinput disable "ELAN067B:00 04F3:31F8 Touchpad"
 xinput disable "TPPS/2 Elan TrackPoint"
 #+END_SRC
+
+** How to disable a PCI device?
+
+例如我想禁用无线网卡，则首先用 ~lspci | grep -i wifi~ 查询其 PCI 地址：
+
+#+BEGIN_SRC bash
+00:14.3 Network controller: Intel Corporation Alder Lake-P PCH CNVi WiFi (rev 01)
+#+END_SRC
+
+然后编写 ~udev rules~ 文件：
+
+#+BEGIN_SRC bash
+ACTION=="add", KERNEL=="0000:00:14.3", SUBSYSTEM=="pci", RUN+="/bin/sh -c 'echo 1 > /sys/bus/pci/devices/0000:00:14.3/remove'"
+#+END_SRC
+
+将其命名为 ~/etc/udev/rules.d/10-wireless-card.rules~ 即可。
 
 * Interesting links
 
