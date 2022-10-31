@@ -13,6 +13,7 @@
 - [[#linux][Linux]]
   - [[#how-to-disableenable-touchpad-or-trackpoint][How to disable/enable touchpad or trackpoint?]]
   - [[#how-to-disable-a-pci-device][How to disable a PCI device?]]
+  - [[#查看局域网内所有-ip-及其-mac-地址][查看局域网内所有 IP 及其 MAC 地址]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
   - [[#github][github]]
@@ -214,6 +215,12 @@ ACTION=="add", KERNEL=="0000:00:14.3", SUBSYSTEM=="pci", RUN+="/bin/sh -c 'echo 
 #+END_SRC
 
 将其命名为 ~/etc/udev/rules.d/10-wireless-card.rules~ 即可。
+
+** 查看局域网内所有 IP 及其 MAC 地址
+
+#+BEGIN_SRC bash
+sudo arp-scan -I wlan0 -l
+#+END_SRC
 
 * Interesting links
 
