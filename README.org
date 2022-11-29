@@ -200,6 +200,20 @@ xinput disable "ELAN067B:00 04F3:31F8 Touchpad"
 xinput disable "TPPS/2 Elan TrackPoint"
 #+END_SRC
 
+也可以将笔记本电脑的键盘关闭：
+
+#+BEGIN_SRC bash
+xinput float 13
+#+END_SRC
+
+其中 ~13~ 是 ~AT Translated Set 2 keyboard~ 的 ID。
+
+重新开启：
+
+#+BEGIN_SRC bash
+xinput reattach 13 3
+#+END_SRC
+
 ** How to disable a PCI device?
 
 例如我想禁用无线网卡，则首先用 ~lspci | grep -i wifi~ 查询其 PCI 地址：
