@@ -3,6 +3,8 @@
 * 目录                                                                  :TOC:
 - [[#conda][Conda]]
   - [[#keyboard-keys-not-working-on-urxvt][Keyboard keys not working on URxvt]]
+- [[#emacs][Emacs]]
+  - [[#unfill-paragraph][unfill paragraph]]
 - [[#gdb][GDB]]
   - [[#configuration][Configuration]]
   - [[#history-search-with-fzf][History search with fzf]]
@@ -27,6 +29,14 @@
 Just manually copy ~/lib/terminfo/r/rxvt-unicode-256color~ to
 ~$HOME/miniconda3/share/terminfo/r/~, and also to
 ~$HOME/miniconda3/envs/YOUR_ENVS_NAME/share/terminfo/r/~.
+
+* Emacs
+
+** unfill paragraph
+
+将文档局部变量 ~fill-column~ 设置为一个非常大的值，例如 ~999999999~ ，然后
+~revert-buffer~ ，然后在对应的段落 ~fill-paragraph~ ，即可。
+
 * GDB
 
 ** Configuration
