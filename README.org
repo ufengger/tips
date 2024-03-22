@@ -272,6 +272,8 @@ sudo arp-scan -I wlan0 -l
 
 - [[https://mathoverflow.net/q/9754][Magic trick based on deep mathematics]]
 
+- [[https://mathoverflow.net/q/463937][What mathematical problems can be attacked using DeepMind's recent mathematical breakthroughs?]]
+
 ** github
 
 - [[https://github.com/kkkgo/KMS_VL_ALL][KMS_VL_ALL - Smart Activation Script]]
