@@ -270,6 +270,8 @@ sudo arp-scan -I wlan0 -l
 
 - [[https://mathoverflow.net/questions/10014/applications-of-the-chinese-remainder-theorem][Applications of the Chinese remainder theorem]]
 
+- [[https://mathoverflow.net/q/9754][Magic trick based on deep mathematics]]
+
 ** github
 
 - [[https://github.com/kkkgo/KMS_VL_ALL][KMS_VL_ALL - Smart Activation Script]]
