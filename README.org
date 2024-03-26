@@ -276,6 +276,8 @@ sudo arp-scan -I wlan0 -l
 
 - [[https://mathoverflow.net/q/366070][What are the benefits of writing vector inner products as ⟨u,v⟩ as opposed to uTv?]]
 
+- [[https://mathoverflow.net/q/38639][Thinking and Explaining]]
+
 ** github
 
 - [[https://github.com/kkkgo/KMS_VL_ALL][KMS_VL_ALL - Smart Activation Script]]
