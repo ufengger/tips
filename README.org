@@ -16,6 +16,10 @@
   - [[#how-to-disableenable-touchpad-or-trackpoint][How to disable/enable touchpad or trackpoint?]]
   - [[#how-to-disable-a-pci-device][How to disable a PCI device?]]
   - [[#查看局域网内所有-ip-及其-mac-地址][查看局域网内所有 IP 及其 MAC 地址]]
+  - [[#samba-server-on-android][Samba server on Android]]
+    - [[#installation][Installation]]
+    - [[#configuration-1][Configuration]]
+    - [[#start][Start]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
   - [[#github][github]]
@@ -244,6 +248,35 @@ ACTION=="add", KERNEL=="0000:00:14.3", SUBSYSTEM=="pci", RUN+="/bin/sh -c 'echo 
 
 #+BEGIN_SRC bash
 sudo arp-scan -I wlan0 -l
+#+END_SRC
+
+** Samba server on Android
+
+*** Installation
+
+#+BEGIN_SRC bash
+apt install samba
+#+END_SRC
+
+*** Configuration
+
+#+BEGIN_SRC bash
+[global]
+server min protocol = NT1
+workgroup = WORKGROUP
+security = user
+
+[shared_folder]
+path = /data/data/com.termux/files/home/public
+public = yes
+writable = yes
+guest ok = yes
+#+END_SRC
+
+*** Start
+
+#+BEGIN_SRC bash
+smbd -p 34172 -D
 #+END_SRC
 
 * Interesting links
