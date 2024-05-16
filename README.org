@@ -311,6 +311,8 @@ smbd -p 34172 -D
 
 - [[https://mathoverflow.net/q/38639][Thinking and Explaining]]
 
+- [[https://mathoverflow.net/q/13638][Which popular games are the most mathematical?]]
+
 ** github
 
 - [[https://github.com/kkkgo/KMS_VL_ALL][KMS_VL_ALL - Smart Activation Script]]
