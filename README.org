@@ -20,6 +20,7 @@
     - [[#installation][Installation]]
     - [[#configuration-1][Configuration]]
     - [[#start][Start]]
+  - [[#scrcpy-on-fedora-40][Scrcpy on Fedora 40]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
   - [[#github][github]]
@@ -277,6 +278,14 @@ guest ok = yes
 
 #+BEGIN_SRC bash
 smbd -p 34172 -D
+#+END_SRC
+
+** Scrcpy on Fedora 40
+
+#+BEGIN_SRC bash
+adb kill-server
+sudo adb start-server
+scrcpy
 #+END_SRC
 
 * Interesting links
