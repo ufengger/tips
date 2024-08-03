@@ -18,6 +18,7 @@
   - [[#查看局域网内所有-ip-及其-mac-地址][查看局域网内所有 IP 及其 MAC 地址]]
   - [[#samba-server-on-android][Samba server on Android]]
   - [[#scrcpy-on-fedora-40][Scrcpy on Fedora 40]]
+  - [[#rclone-将坚果云-webdav-挂载到本地][rclone 将坚果云 (webdav) 挂载到本地]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
   - [[#github][github]]
@@ -290,6 +291,18 @@ Wireless Scrcpy:
 #+BEGIN_SRC bash
 adb tcpip 5555
 scrcpy --tipip
+#+END_SRC
+
+** rclone 将坚果云 (webdav) 挂载到本地
+
+首先 `rclone config` 添加远程连接, `webdav` 的 `url` 为
+https://dav/jianguoyun.com/dav, 名称 `$REMOTE_NAME` 可以随便起，例如：
+`jianguoyun` 。
+
+然后运行下面的命令：
+
+#+BEGIN_SRC bash
+rclone mount $REMOTE_NAME:$YOUR_REMOTE_PATH $YOUR_LOCAL_PATH --vfs-cache-mode writes &
 #+END_SRC
 
 * Interesting links
