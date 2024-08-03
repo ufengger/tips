@@ -17,9 +17,6 @@
   - [[#how-to-disable-a-pci-device][How to disable a PCI device?]]
   - [[#查看局域网内所有-ip-及其-mac-地址][查看局域网内所有 IP 及其 MAC 地址]]
   - [[#samba-server-on-android][Samba server on Android]]
-    - [[#installation][Installation]]
-    - [[#configuration-1][Configuration]]
-    - [[#start][Start]]
   - [[#scrcpy-on-fedora-40][Scrcpy on Fedora 40]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
@@ -286,6 +283,13 @@ smbd -p 34172 -D
 adb kill-server
 sudo adb start-server
 scrcpy
+#+END_SRC
+
+Wireless Scrcpy:
+
+#+BEGIN_SRC bash
+adb tcpip 5555
+scrcpy --tipip
 #+END_SRC
 
 * Interesting links
