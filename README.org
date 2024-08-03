@@ -295,9 +295,9 @@ scrcpy --tipip
 
 ** rclone 将坚果云 (webdav) 挂载到本地
 
-首先 `rclone config` 添加远程连接, `webdav` 的 `url` 为
-https://dav/jianguoyun.com/dav, 名称 `$REMOTE_NAME` 可以随便起，例如：
-`jianguoyun` 。
+首先 ~rclone config~ 添加远程连接, ~webdav~ 的 ~url~ 为
+https://dav/jianguoyun.com/dav, 名称 ~$REMOTE_NAME~ 可以随便起，例如：
+~jianguoyun~ 。
 
 然后运行下面的命令：
 
