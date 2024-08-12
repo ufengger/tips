@@ -19,6 +19,7 @@
   - [[#samba-server-on-android][Samba server on Android]]
   - [[#scrcpy-on-fedora-40][Scrcpy on Fedora 40]]
   - [[#rclone-将坚果云-webdav-挂载到本地][rclone 将坚果云 (webdav) 挂载到本地]]
+  - [[#wps-字体加粗问题][WPS 字体加粗问题]]
 - [[#interesting-links][Interesting links]]
   - [[#mathoverflow][mathoverflow]]
   - [[#github][github]]
@@ -304,6 +305,17 @@ https://dav/jianguoyun.com/dav, 名称 ~$REMOTE_NAME~ 可以随便起，例如�
 #+BEGIN_SRC bash
 rclone mount $REMOTE_NAME:$YOUR_REMOTE_PATH $YOUR_LOCAL_PATH --vfs-cache-mode writes &
 #+END_SRC
+
+** WPS 字体加粗问题
+
+描述见 [[https://kojipkgs.fedoraproject.org//packages/freetype/2.13.0/1.fc39/x86_64/freetype-2.13.0-1.fc39.x86_64.rpm
+]]
+解决办法：
+
+1. 下载低版本的 ~libfreetype~ ([[https://kojipkgs.fedoraproject.org//packages/freetype/2.13.0/1.fc39/x86_64/freetype-2.13.0-1.fc39.x86_64.rpm
+]])
+2. 解压后，将 ~libfreetype.so.6.19.0~ 复制到 ~/opt/kingsoft/wps-office/office6/~
+3. 然后 ~cd /opt/kingsoft/wps-office/office6/ && sudo ln -s libfreetype.so.6.19.0 libfreetype.so.6~
 
 * Interesting links
 
