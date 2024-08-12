@@ -314,7 +314,7 @@ rclone mount $REMOTE_NAME:$YOUR_REMOTE_PATH $YOUR_LOCAL_PATH --vfs-cache-mode wr
 
 1. 下载低版本的 ~libfreetype~ ([[https://kojipkgs.fedoraproject.org//packages/freetype/2.13.0/1.fc39/x86_64/freetype-2.13.0-1.fc39.x86_64.rpm
 ]])
-2. 解压后，将 ~libfreetype.so.6.19.0~ 复制到 ~/opt/kingsoft/wps-office/office6/~
+2. 解压 (~rpm2cpio freetype-2.13.0-1.fc39.x86_64.rpm | cpio -idmv~) 后，将 ~libfreetype.so.6.19.0~ 复制到 ~/opt/kingsoft/wps-office/office6/~
 3. 然后 ~cd /opt/kingsoft/wps-office/office6/ && sudo ln -s libfreetype.so.6.19.0 libfreetype.so.6~
 
 * Interesting links
