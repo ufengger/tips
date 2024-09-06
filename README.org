@@ -25,6 +25,7 @@
   - [[#github][github]]
   - [[#online-courses][Online Courses]]
   - [[#miscellaneous][miscellaneous]]
+  - [[#苹果官方节假日日历地址][苹果官方节假日日历地址]]
 
 * Conda
 
@@ -366,3 +367,7 @@ rclone mount $REMOTE_NAME:$YOUR_REMOTE_PATH $YOUR_LOCAL_PATH --vfs-cache-mode wr
 ** miscellaneous
 
 - [[http://www.georgehart.com/bagel/bagel.html][Mathematically Correct Breakfast: How to Slice a Bagel into Two Linked Halves]]
+
+** 苹果官方节假日日历地址
+
+webcal://p10-calendars.icloud.com/holiday/CN_zh.ics
