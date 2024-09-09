@@ -3,6 +3,7 @@
 * 目录                                                                  :TOC:
 - [[#conda][Conda]]
   - [[#keyboard-keys-not-working-on-urxvt][Keyboard keys not working on URxvt]]
+  - [[#doom-emacs-and-condael][doom emacs and ~conda.el~]]
 - [[#emacs][Emacs]]
   - [[#unfill-paragraph][unfill paragraph]]
 - [[#gdb][GDB]]
@@ -34,6 +35,10 @@
 Just manually copy ~/lib/terminfo/r/rxvt-unicode-256color~ to
 ~$HOME/miniconda3/share/terminfo/r/~, and also to
 ~$HOME/miniconda3/envs/YOUR_ENVS_NAME/share/terminfo/r/~.
+
+** doom emacs and ~conda.el~
+
+[[https://github.com/doomemacs/doomemacs/issues/7283][File mode specification error: (wrong-type-argument stringp nil) when opening python files]]
 
 * Emacs
 
