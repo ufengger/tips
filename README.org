@@ -18,6 +18,7 @@
   - [[#how-to-disable-a-pci-device][How to disable a PCI device?]]
   - [[#查看局域网内所有-ip-及其-mac-地址][查看局域网内所有 IP 及其 MAC 地址]]
   - [[#samba-server-on-android][Samba server on Android]]
+  - [[#ssh-on-android][SSH on Android]]
   - [[#scrcpy-on-fedora-40][Scrcpy on Fedora 40]]
   - [[#rclone-将坚果云-webdav-挂载到本地][rclone 将坚果云 (webdav) 挂载到本地]]
   - [[#wps-字体加粗问题][WPS 字体加粗问题]]
@@ -283,6 +284,12 @@ guest ok = yes
 
 #+BEGIN_SRC bash
 smbd -p 34172 -D
+#+END_SRC
+
+** SSH on Android
+
+#+BEGIN_SRC bash
+sshd
 #+END_SRC
 
 ** Scrcpy on Fedora 40
